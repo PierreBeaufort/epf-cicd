@@ -3,5 +3,5 @@ on: [push]
 jobs:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Committing author: ${{ github.actor }}
-      - run: echo "Branch: ${{ github.ref }}
+      - run: echo "Committing author: ${{ github.actor }}"
+      - run: echo "Branch: ${{ github.ref }}"
