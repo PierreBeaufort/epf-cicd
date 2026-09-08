@@ -3,7 +3,10 @@ run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 jobs:
   Say-Hello:
-    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        version: [10, 12, 14]
+        os: [ubuntu-latest, windows-latest]
     steps:
       - run: echo "Hello CI/CD"
       - run: echo "Author is ${{ github.actor }} on ${{ github.ref }}"
