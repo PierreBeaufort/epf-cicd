@@ -7,6 +7,3 @@ jobs:
     steps:
       - run: echo "Hello CI/CD"
       - run: echo "Author is ${{ github.actor }} on ${{ github.ref }}"
-      - run: echo "event: is ${{ github.event_name }}"
-      - run: echo "runner is ${{ runner.os }}"
-      - run: echo " info ${{ job.container }}"
