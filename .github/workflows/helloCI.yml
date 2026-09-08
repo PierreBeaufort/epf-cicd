@@ -5,5 +5,5 @@ jobs:
   Say-Hello:
     runs-on: ubuntu-latest
     steps:
-      - run: echo " event."
-      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
+      - run: echo "Hello CI/CD"
+      - run: echo "Author is ${{ github.actor }} on ${{ github.ref }}"
